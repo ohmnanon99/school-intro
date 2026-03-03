@@ -1,0 +1,38 @@
+<!--pages/guest/guest.wxml-->
+<image class="bg" src="/images/slmh9.jpg" />
+<from>
+  <view class="content">
+    <!-- 姓名 -->
+    <view class="input">
+      <input name="name" placeholder-class="phcolor" placeholder="输入您的姓名" />
+    </view>
+    <!-- 手机号码 -->
+    <view class="input">
+      <input name="phone" placeholder-class="phcolor" placeholder="输入您的手机号码" />
+    </view>
+    <!-- 性别 -->
+    <view class="radio">
+      <text>请选择您的性别：</text>
+      <radio-group>
+        <radio>男</radio>
+        <radio>女</radio>
+      </radio-group>
+    </view>
+    <!-- 喜欢的景点 -->
+    <view class="check">
+    <text>请选择您最喜欢的学院：</text>
+    <checkbox-group>
+        <checkbox>信息工程学院</checkbox>
+        <checkbox>国际商学院</checkbox>
+        <checkbox>外语学院</checkbox>
+        <checkbox>财会金融学院</checkbox>
+    </checkbox-group>
+</view>
+    <!-- 意见 -->
+    <view class="idea">
+      <input  placeholder="请输入意见" type="text"/>
+
+    </view>
+    <button bind:tap="submit" type="primary">提交</button>
+  </view>
+</from>

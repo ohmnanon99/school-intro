@@ -1,0 +1,96 @@
+.container {
+  position: relative; 
+  width: 100%;
+  height: 100vh; /* 基于视口高度，让背景覆盖全屏 */
+  overflow: hidden; /* 避免内部滚动影响整体 */
+}
+/* 背景图优化：固定背景，不随滚动移动 */
+.bg {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover; 
+}
+.bg2 {
+  position: relative; /* 改为相对定位，作为内容容器基准 */
+  max-width: 90vw;
+  max-height: 130vh;
+  margin: 1rpx auto; /* 水平居中，替代原不合理的 margin */
+  border-radius: 50rpx;
+  z-index: 2; 
+  background-color: rgb(240, 240, 240);
+  overflow: hidden; /* 防止内容溢出 */
+  height: 800vh;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding-top: 20rpx; /* 增加内边距，优化标题显示 */
+}
+.title {
+  font-size: 42rpx;
+  margin-bottom: 10rpx; 
+}
+.subtitle {
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+.main-image-container {
+  text-align: center; 
+  width: 100%; /* 适配父容器宽度 */
+  margin-bottom: 0rpx;
+}
+.main-image-container image {
+  width: 600rpx;
+  border-radius: 50rpx;
+}
+/* 滚动区域优化：基于内容容器计算高度 */
+.scroll-container {
+  max-height: calc(90vh - 300rpx); /* 简化计算，可根据实际标题、图片高度调整 */
+  overflow-y: auto;
+  padding: 0 20rpx; 
+  box-sizing: border-box; /* 避免内边距撑大容器 */
+}
+.photo-list {
+  display: flex;
+  flex-direction: column; /* 纵向排列列表项 */
+  gap: 30rpx; /* 替代 margin-bottom，更简洁 */
+  height: 100vh;
+}
+.new-photo-item {
+  background-color: rgb(255, 255, 255);
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 20rpx; /* 增加圆角，优化视觉 */
+}
+.item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20rpx; /* 增加内边距，优化内容间距 */
+  box-sizing: border-box;
+}
+.item-text {
+  flex: 1;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+}
+.item-image-container {
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  border-radius: 50%; /* 直接用 50% 实现圆形，替代 60% 更标准 */
+}
+.circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

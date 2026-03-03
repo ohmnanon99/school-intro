@@ -1,0 +1,45 @@
+.avatar-wrapper {
+  width: 160rpx;
+  height: 160rpx;
+  padding: 0;
+  background: none;
+}
+
+.avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+}
+
+.nickname {
+  width: 80%;
+  height: 100rpx;
+  margin: 20px auto;
+  border: 1px solid #000000;
+  text-align: center;
+}
+.btn-group {
+  display: flex;
+  flex-direction: row; /* 横向排列 */
+  justify-content: space-around; /* 均匀分布 */
+}
+button {
+  padding: 10px 20px;
+  background-color: #09bb07;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* 新增小组信息样式（保持与原始风格一致） */
+.group-info {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.info-item {
+  font-size: 14px;
+  line-height: 1.5;
+}

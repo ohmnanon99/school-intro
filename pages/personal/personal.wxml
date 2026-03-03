@@ -1,0 +1,18 @@
+<view style="margin-left: 150px;">
+    <image src="{{avatarUrl}}" style="width: 100px;height: 100px;" bindtap="chooseWechatAvatar" />
+</view>
+<view>
+    <input type="text" value="{{nickname}}" placeholder="海天" class="nickname" 
+           bindtap="chooseWechatNickname" bindinput="inputNickname" />
+</view>
+<view class="btn-group">
+    <button bind:tap="change" type="primary" size="mini">选择头像</button>
+    <button bind:tap="upload" type="primary" size="mini">头像上传</button>
+    <button bind:tap="getGroupScore"type="primary"size="mini">获取小组积分</button>
+</view>
+<view class="group-info">
+    <view class="info-item">小组：5号</view>
+    <view class="info-item">组内成员：王琦 徐宇辰</view>
+    <view class="info-item">班级：2班</view>
+    <view class="info-item">课程：微信小程序</view>
+</view>

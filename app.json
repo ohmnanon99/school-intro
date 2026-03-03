@@ -1,0 +1,68 @@
+{
+    "pages": [
+        "pages/introduce/introduce",
+        "pages/food/food",
+        "pages/chat/chat",
+        "pages/personal/personal",
+        "pages/guest/guest"
+    ],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#AAFFEE",
+        "navigroundTextStyle": "light",
+        "navigationStyle": "default"
+    },
+    "tabBar": {
+        "color": "black",
+        "selectedColor": "#99ffff",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/introduce/introduce",
+                "text": "校园介绍",
+                "iconPath": "/images/tabbar/学校介绍.png",
+                "selectedIconPath": "/images/tabbar/学校介绍.png"
+            },
+            {
+              "pagePath": "pages/guest/guest",
+              "text": "调查问卷",
+              "iconPath": "/images/tabbar/自由发挥.png",
+              "selectedIconPath": "/images/tabbar/自由发挥.png"
+          },
+            {
+                "pagePath": "pages/food/food",
+                "text": "校园美食",
+                "iconPath": "/images/tabbar/校园美食.png",
+                "selectedIconPath": "/images/tabbar/校园美食.png"
+            },
+            {
+                "pagePath": "pages/chat/chat",
+                "text": "在线聊天",
+                "iconPath": "/images/tabbar/在线聊天.png",
+                "selectedIconPath": "/images/tabbar/在线聊天.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "个人信息",
+                "iconPath": "/images/tabbar/个人信息.png",
+                "selectedIconPath": "/images/tabbar/个人信息.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "?renderer": "skyline",
+    "rendererOptions": {
+        "skyline": {
+            "defaultDisplayBlock": true,
+            "defaultContentBox": true,
+            "tagNameStyleIsolation": "legacy",
+            "disableABTest": true,
+            "sdkVersionBegin": "3.0.0",
+            "sdkVersionEnd": "15.255.255"
+        }
+    },
+    "componentFramework": "glass-easel",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

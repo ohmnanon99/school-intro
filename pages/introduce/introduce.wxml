@@ -1,0 +1,25 @@
+<view class="container">
+  <image class="bg" src="/images/slmh1.jpg" />
+  <view class="scroll-container">
+  <view class="bg2">
+    <view class="header">
+      <text class="title">山东外国语职业技术大学</text>
+      <text class="subtitle">学校简介</text>
+    </view>
+    <view class="main-image-container">
+      <image src="/images/introduce/山外校徽2.jpg" mode="aspectFill"></image>
+    </view>
+    
+    <view class="photo-list">
+  <view class="new-photo-item" wx:for="{{photoList}}" wx:key="index">
+    <view class="item-content">
+      <text class="item-text">{{item.name}}</text>
+      <view class="item-image-container">
+        <image class="circle-image" src="{{item.src}}" mode="aspectFill"></image>
+      </view>
+    </view>
+  </view>
+</view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,69 @@
+/* pages/guest/guest.wxss */
+.bg{
+    width: 100vw;
+    height: 100vh;
+}
+.content{
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+    bottom: 8vh;
+    top: 10vh;
+}
+.content .input{
+    font-size: large;
+    border: 1rpx solid #131a1f;
+    border-radius:10rpx;
+    padding: 1.5vh  40rpx;
+    margin-bottom:1.5vh;
+    color:#12161d;
+}
+.content .radio {
+    font-size: large;
+    margin-bottom: 1.5vh;
+    color: #fff;
+    display:block;
+}
+.content .check {
+    font-size:large;
+    margin-bottom:1.5vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+}
+
+.content .check checkbox-group{
+  margin-top: 1.5vh;
+  color: #fff;
+}
+
+.content .check checkbox-group checkbox {
+  display: block;
+  margin-left: 0; 
+  margin-bottom: 5rpx; 
+}
+.content .check checkbox-group checkbox:nth-child(1){
+  margin-left: 0;
+}
+
+.idea{
+  height: 25vh;
+    font-size: large;
+    border: 1rpx solid #131a1f;
+    border-radius:10rpx;
+    padding: 1.5vh  40rpx;
+    margin-bottom:1.5vh;
+    color:#fff;
+}
+.content button {
+  width: 70vw;
+    font-size: large;
+    background:#99ffff;
+    color:rgb(243, 243, 237);
+    
+}
+
+.content .phcolor{
+    color: #fff;
+}

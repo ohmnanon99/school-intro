@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle":"black",
+  "navigationBarTitleText": "校园美食",
+  "onReachBottomDistance": 200,
+  "enablePullDownRefresh": true
+}
